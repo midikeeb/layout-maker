@@ -37,7 +37,7 @@ document.getElementById('keeb-submit').onclick = function (event){
         ).map(ind => 
             (lowest + ind)
         ).map(ind =>
-            `MI_${notes[ind%12]}` + (Math.floor(ind/12) == 0 ? '' : `_${Math.floor(ind/12)}`)
+            `\tMI_${notes[ind%12]}` + (Math.floor(ind/12) == 0 ? '' : `_${Math.floor(ind/12)}`)
         )
     ).map(
         noteArray =>
